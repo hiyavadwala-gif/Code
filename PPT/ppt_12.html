@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Success Stories - Testimonials Grid</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        /* Neon Glows - Solid colors/box-shadows only, no gradients */
+        .glow-box-cyan {
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.15);
+            border-color: rgba(0, 243, 255, 0.3);
+        }
+        .glow-box-magenta {
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.15);
+            border-color: rgba(255, 0, 255, 0.3);
+        }
+        
+        .achievement-card {
+            background-color: #0a0a0a;
+            border: 1px solid #222;
+            transition: all 0.3s ease;
+        }
+        .achievement-card:hover {
+            transform: translateY(-5px);
+            border-color: #00f3ff;
+            box-shadow: 0 5px 15px rgba(0, 243, 255, 0.1);
+        }
+
+        .testimonial-card {
+            background-color: #0a0a0a;
+            border: 1px solid #222;
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            border-color: #ff00ff;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.1);
+            background-color: #0f0f0f;
+        }
+        
+        .quote-icon {
+            color: #222;
+            transition: color 0.3s;
+        }
+        .testimonial-card:hover .quote-icon {
+            color: rgba(255, 0, 255, 0.2);
+        }
+
+        .studio-pill {
+            background-color: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body class="bg-black m-0 p-0 flex items-center justify-center">
+<div class="w-[1280px] h-[720px] bg-[#050505] relative overflow-hidden flex flex-col font-sans text-white">
+<!-- Ambient Background Effects (No Gradients) -->
+<div class="absolute top-[-50px] right-[-50px] w-64 h-64 bg-[#00f3ff] rounded-full filter blur-[150px] opacity-[0.05]"></div>
+<div class="absolute bottom-[-50px] left-[-50px] w-64 h-64 bg-[#ff00ff] rounded-full filter blur-[150px] opacity-[0.05]"></div>
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle, #333 1px, transparent 1px); background-size: 30px 30px;"></div>
+<!-- Header Section -->
+<div class="px-16 pt-10 pb-2 z-10 w-full border-b border-gray-800">
+<div class="flex items-center space-x-3 mb-2">
+<div class="w-8 h-1 bg-[#ff00ff] shadow-[0_0_8px_#ff00ff]"></div>
+<p class="text-gray-400 tracking-[0.2em] text-xs uppercase font-medium font-['Inter']">Hall of Fame</p>
+</div>
+<div class="flex justify-between items-end pb-4">
+<h1 class="text-5xl font-bold font-['Space_Grotesk'] text-white leading-tight">
+                    SUCCESS <span class="text-[#00f3ff]">STORIES</span>
+</h1>
+<p class="text-gray-400 font-['Inter'] text-sm text-right max-w-lg">
+                    Celebrating the achievements of our alumni and the recognition of our excellence in education.
+                </p>
+</div>
+</div>
+<!-- Main Content Wrapper -->
+<div class="flex-1 px-16 py-6 z-10 flex flex-col gap-6">
+<!-- Achievements Row -->
+<div class="grid grid-cols-3 gap-5">
+<!-- Achievement 1 -->
+<div class="achievement-card rounded-xl p-5 flex items-center gap-4">
+<div class="w-14 h-14 rounded-lg bg-[#111] flex items-center justify-center text-[#ff00ff]">
+<i class="fa-solid fa-award text-2xl"></i>
+</div>
+<div>
+<h3 class="text-white font-bold font-['Space_Grotesk'] text-lg">Centre of Excellence</h3>
+<p class="text-gray-400 text-xs font-['Inter'] mt-1">Awarded by MESC (Media &amp; Entertainment Skills Council)</p>
+</div>
+</div>
+<!-- Achievement 2 -->
+<div class="achievement-card rounded-xl p-5 flex items-center gap-4">
+<div class="w-14 h-14 rounded-lg bg-[#111] flex items-center justify-center text-[#00f3ff]">
+<i class="fa-solid fa-trophy text-2xl"></i>
+</div>
+<div>
+<h3 class="text-white font-bold font-['Space_Grotesk'] text-lg">Top 25 Global Rank</h3>
+<p class="text-gray-400 text-xs font-['Inter'] mt-1">Intl. Animation Schools 2020 (Animation Career Review)</p>
+</div>
+</div>
+<!-- Achievement 3 -->
+<div class="achievement-card rounded-xl p-5 flex items-center gap-4">
+<div class="w-14 h-14 rounded-lg bg-[#111] flex items-center justify-center text-[#ff00ff]">
+<i class="fa-solid fa-star text-2xl"></i>
+</div>
+<div>
+<h3 class="text-white font-bold font-['Space_Grotesk'] text-lg">Competition Wins</h3>
+<p class="text-gray-400 text-xs font-['Inter'] mt-1">Regular accolades in 'Rockstar' &amp; National challenges</p>
+</div>
+</div>
+</div>
+<!-- Testimonials Grid -->
+<div class="grid grid-cols-3 gap-5 flex-1">
+<!-- Testimonial 1 -->
+<div class="testimonial-card rounded-xl p-6 relative flex flex-col h-full">
+<i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl quote-icon"></i>
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-gray-800 border border-gray-600 flex items-center justify-center overflow-hidden">
+<i class="fa-solid fa-user text-gray-500"></i>
+</div>
+<div>
+<h4 class="text-white font-bold font-['Space_Grotesk']">Subham Sarkar</h4>
+<p class="text-[#00f3ff] text-xs font-['Inter'] font-semibold">Game Artist</p>
+<p class="text-gray-500 text-[10px] font-['Inter']">Lakshya Digital Pvt Ltd</p>
+</div>
+</div>
+<div class="flex-1">
+<p class="text-gray-300 text-sm font-['Inter'] italic leading-relaxed">
+                            "I started my journey from Frameboxx 2.0 and the experience was transformative! Frameboxx equipped me with creative and technical skills, deepening my understanding of 3D art."
+                        </p>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="testimonial-card rounded-xl p-6 relative flex flex-col h-full">
+<i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl quote-icon"></i>
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-gray-800 border border-gray-600 flex items-center justify-center overflow-hidden">
+<i class="fa-solid fa-user text-gray-500"></i>
+</div>
+<div>
+<h4 class="text-white font-bold font-['Space_Grotesk']">Vaishnavi Badade</h4>
+<p class="text-[#ff00ff] text-xs font-['Inter'] font-semibold">UI/UX Designer</p>
+<p class="text-gray-500 text-[10px] font-['Inter']">Technogrowth Solutions</p>
+</div>
+</div>
+<div class="flex-1">
+<p class="text-gray-300 text-sm font-['Inter'] italic leading-relaxed">
+                            "Faculties here have so much knowledge about the courses they offer, also they are very friendly. We can ask doubts easily... You will definitely feel the Positive Vibes."
+                        </p>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="testimonial-card rounded-xl p-6 relative flex flex-col h-full">
+<i class="fa-solid fa-quote-right absolute top-6 right-6 text-4xl quote-icon"></i>
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-gray-800 border border-gray-600 flex items-center justify-center overflow-hidden">
+<i class="fa-solid fa-user text-gray-500"></i>
+</div>
+<div>
+<h4 class="text-white font-bold font-['Space_Grotesk']">Rugved Karmarkar</h4>
+<p class="text-[#00f3ff] text-xs font-['Inter'] font-semibold">3D Artist</p>
+<p class="text-gray-500 text-[10px] font-['Inter']">24Media Pvt Ltd</p>
+</div>
+</div>
+<div class="flex-1">
+<p class="text-gray-300 text-sm font-['Inter'] italic leading-relaxed">
+                            "The time I spent in Frameboxx has taught me a lot for my successful life. I got a chance to improve my skills which was a very important part of my career."
+                        </p>
+</div>
+</div>
+</div>
+<!-- Alumni Placements Strip -->
+<div class="mt-2 pt-4 border-t border-gray-800">
+<p class="text-[10px] uppercase tracking-widest text-gray-500 font-['Space_Grotesk'] mb-3">Alumni Working At Leading Studios</p>
+<div class="flex flex-wrap gap-3">
+<span class="studio-pill px-3 py-1 rounded text-xs text-gray-300 font-['Inter']">DNEG</span>
+<span class="studio-pill px-3 py-1 rounded text-xs text-gray-300 font-['Inter']">Technicolor</span>
+<span class="studio-pill px-3 py-1 rounded text-xs text-gray-300 font-['Inter']">MPC</span>
+<span class="studio-pill px-3 py-1 rounded text-xs text-gray-300 font-['Inter']">Prime Focus</span>
+<span class="studio-pill px-3 py-1 rounded text-xs text-gray-300 font-['Inter']">Ubisoft</span>
+<span class="studio-pill px-3 py-1 rounded text-xs text-gray-300 font-['Inter']">Redchillies.vfx</span>
+<span class="studio-pill px-3 py-1 rounded text-xs text-gray-300 font-['Inter']">Lakshya Digital</span>
+<span class="studio-pill px-3 py-1 rounded text-xs text-gray-300 font-['Inter']">Zynga</span>
+<span class="studio-pill px-3 py-1 rounded text-xs text-gray-300 font-['Inter']">Viacom 18</span>
+</div>
+</div>
+</div>
+<!-- Footer Strip -->
+<div class="absolute bottom-0 w-full h-1 bg-gray-900">
+<div class="w-1/3 bg-[#ff00ff] h-full opacity-60 ml-auto mr-0"></div>
+</div>
+</div>
+</body>
+</html>

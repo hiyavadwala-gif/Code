@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Conclusion - Why Frameboxx</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        /* Neon Glows - Solid colors/box-shadows only, no gradients */
+        .glow-text-cyan {
+            text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+        }
+        
+        .card-container {
+            transition: all 0.3s ease-out;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+        
+        .card-container:hover {
+            transform: translateY(-10px);
+            background-color: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .card-container:hover .icon-wrapper {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .accent-bar {
+            transition: width 0.4s ease;
+            width: 40px;
+        }
+
+        .card-container:hover .accent-bar {
+            width: 100%;
+        }
+
+        .cyan-theme:hover {
+            box-shadow: 0 10px 30px -10px rgba(0, 243, 255, 0.15);
+            border-color: rgba(0, 243, 255, 0.4);
+        }
+        
+        .magenta-theme:hover {
+            box-shadow: 0 10px 30px -10px rgba(255, 0, 255, 0.15);
+            border-color: rgba(255, 0, 255, 0.4);
+        }
+
+        /* Ambient Orbs */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.15;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-black m-0 p-0 flex items-center justify-center">
+<div class="w-[1280px] h-[720px] bg-[#050505] relative overflow-hidden flex flex-col font-sans text-white">
+<!-- Ambient Background (No Gradients) -->
+<div class="orb w-96 h-96 bg-[#00f3ff] -top-20 -left-20"></div>
+<div class="orb w-96 h-96 bg-[#ff00ff] -bottom-20 -right-20"></div>
+<!-- Grid Pattern Overlay -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 50px 50px;">
+</div>
+<!-- Header Section -->
+<div class="px-16 pt-12 pb-6 z-10 w-full relative">
+<div class="flex items-center space-x-3 mb-3">
+<div class="w-12 h-1 bg-white"></div>
+<p class="text-gray-400 tracking-[0.3em] text-xs uppercase font-bold font-['Inter']">Conclusion</p>
+</div>
+<div class="flex flex-col">
+<h1 class="text-6xl font-bold font-['Space_Grotesk'] text-white leading-tight mb-2">
+                    YOUR CREATIVE <br/>
+<span class="text-transparent bg-clip-text" style="color: #00f3ff; text-shadow: 0 0 20px rgba(0,243,255,0.4);">FUTURE</span> STARTS HERE
+                </h1>
+<p class="text-gray-400 font-['Inter'] text-lg max-w-2xl mt-2 leading-relaxed">
+                    Frameboxx isn't just an institute; it's a launchpad for your career in the Media &amp; Entertainment industry. Here is why you should join us.
+                </p>
+</div>
+</div>
+<!-- Main Content Cards -->
+<div class="flex-1 px-16 pb-12 z-10 flex items-center justify-center">
+<div class="grid grid-cols-4 gap-6 w-full h-full max-h-[400px]">
+<!-- Card 1: Curriculum -->
+<div class="card-container cyan-theme rounded-xl p-6 relative flex flex-col justify-between group h-full">
+<div>
+<div class="icon-wrapper w-14 h-14 bg-[#0a0a0a] border border-gray-700 rounded-lg flex items-center justify-center mb-6 text-[#00f3ff] text-2xl transition-transform duration-300">
+<i class="fa-solid fa-graduation-cap"></i>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] mb-3 text-white">Expert-Led Learning</h3>
+<p class="text-sm text-gray-400 font-['Inter'] leading-relaxed">
+                            Curriculum aligned with studio requirements, taught by industry veterans and mentors who know the craft inside out.
+                        </p>
+</div>
+<div class="mt-4">
+<div class="h-1 bg-[#00f3ff] accent-bar rounded-full opacity-60 group-hover:opacity-100"></div>
+</div>
+</div>
+<!-- Card 2: Practical Training -->
+<div class="card-container magenta-theme rounded-xl p-6 relative flex flex-col justify-between group h-full">
+<div>
+<div class="icon-wrapper w-14 h-14 bg-[#0a0a0a] border border-gray-700 rounded-lg flex items-center justify-center mb-6 text-[#ff00ff] text-2xl transition-transform duration-300">
+<i class="fa-solid fa-laptop-code"></i>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] mb-3 text-white">Production Ready</h3>
+<p class="text-sm text-gray-400 font-['Inter'] leading-relaxed">
+                            Hands-on training with real-world projects using the latest toolchains: Unreal Engine 5, Maya, Nuke, and Adobe Suite.
+                        </p>
+</div>
+<div class="mt-4">
+<div class="h-1 bg-[#ff00ff] accent-bar rounded-full opacity-60 group-hover:opacity-100"></div>
+</div>
+</div>
+<!-- Card 3: Career Focus -->
+<div class="card-container cyan-theme rounded-xl p-6 relative flex flex-col justify-between group h-full">
+<div>
+<div class="icon-wrapper w-14 h-14 bg-[#0a0a0a] border border-gray-700 rounded-lg flex items-center justify-center mb-6 text-[#00f3ff] text-2xl transition-transform duration-300">
+<i class="fa-solid fa-briefcase"></i>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] mb-3 text-white">Portfolio First</h3>
+<p class="text-sm text-gray-400 font-['Inter'] leading-relaxed">
+                            Structured placement support focused on creating a killer demo reel that gets you hired by top studios.
+                        </p>
+</div>
+<div class="mt-4">
+<div class="h-1 bg-[#00f3ff] accent-bar rounded-full opacity-60 group-hover:opacity-100"></div>
+</div>
+</div>
+<!-- Card 4: Network -->
+<div class="card-container magenta-theme rounded-xl p-6 relative flex flex-col justify-between group h-full">
+<div>
+<div class="icon-wrapper w-14 h-14 bg-[#0a0a0a] border border-gray-700 rounded-lg flex items-center justify-center mb-6 text-[#ff00ff] text-2xl transition-transform duration-300">
+<i class="fa-solid fa-globe"></i>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] mb-3 text-white">Strong Network</h3>
+<p class="text-sm text-gray-400 font-['Inter'] leading-relaxed">
+                            Nationwide presence with deep industry collaborations, alumni connections, and regular studio visits.
+                        </p>
+</div>
+<div class="mt-4">
+<div class="h-1 bg-[#ff00ff] accent-bar rounded-full opacity-60 group-hover:opacity-100"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer / CTA Strip -->
+<div class="px-16 pb-10 z-10 w-full">
+<div class="bg-gray-900 border border-gray-800 rounded-lg p-5 flex items-center justify-between">
+<div class="flex items-center space-x-4">
+<div class="w-10 h-10 rounded-full bg-[#00f3ff] flex items-center justify-center text-black">
+<i class="fa-solid fa-check text-lg"></i>
+</div>
+<div>
+<p class="text-white font-bold font-['Space_Grotesk']">Ready to start your journey?</p>
+<p class="text-gray-400 text-xs font-['Inter']">Take the next step towards a creative career.</p>
+</div>
+</div>
+<div class="flex space-x-8 text-sm font-['Space_Grotesk']">
+<div class="flex items-center text-gray-300">
+<i class="fa-solid fa-award text-[#ff00ff] mr-2"></i> MESC Certified
+                    </div>
+<div class="flex items-center text-gray-300">
+<i class="fa-solid fa-users text-[#00f3ff] mr-2"></i> 100% Placement Assistance
+                    </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

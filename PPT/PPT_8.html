@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Placement Support - Process Flow</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .neon-shadow-cyan {
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+        }
+        .neon-shadow-magenta {
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+        }
+        .process-card {
+            transition: all 0.3s ease;
+        }
+        .process-card:hover {
+            transform: translateY(-10px);
+        }
+        .step-number {
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+            color: transparent;
+        }
+        .process-card:hover .step-number {
+            color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-black m-0 p-0 flex items-center justify-center">
+<div class="w-[1280px] h-[720px] bg-[#050505] relative overflow-hidden flex flex-col font-sans text-white">
+<!-- Background Ambient Effects -->
+<div class="absolute top-[10%] left-[20%] w-[600px] h-[600px] bg-[#00f3ff] rounded-full filter blur-[250px] opacity-[0.04]"></div>
+<div class="absolute bottom-[10%] right-[20%] w-[600px] h-[600px] bg-[#ff00ff] rounded-full filter blur-[250px] opacity-[0.04]"></div>
+<!-- Grid Pattern Overlay -->
+<div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;"></div>
+<!-- Header Section -->
+<div class="px-16 pt-10 z-10 w-full">
+<div class="flex items-center space-x-3 mb-2">
+<div class="w-8 h-1 bg-[#00f3ff] shadow-[0_0_10px_#00f3ff]"></div>
+<p class="text-gray-400 tracking-[0.2em] text-xs uppercase font-medium font-['Inter']">Career Launchpad</p>
+</div>
+<div class="flex justify-between items-end border-b border-gray-800 pb-4">
+<h1 class="text-5xl font-bold font-['Space_Grotesk'] text-white leading-tight">
+                    PLACEMENT <span class="text-[#00f3ff]">SUPPORT</span>
+</h1>
+<p class="text-gray-400 font-['Inter'] text-sm max-w-md text-right">
+                    Our dedicated placement cell ensures you transition smoothly from student to working professional.
+                </p>
+</div>
+</div>
+<!-- Main Process Flow Content -->
+<div class="flex-1 px-12 relative flex items-center justify-center z-10">
+<!-- Connecting Line Base -->
+<div class="absolute top-[50%] left-[80px] right-[80px] h-1 bg-gray-800 transform -translate-y-1/2 z-0"></div>
+<!-- Process Steps Container -->
+<div class="w-full flex justify-between items-center relative z-10 px-4">
+<!-- Step 1: Portfolio Readiness -->
+<div class="flex flex-col items-center group process-card w-48">
+<!-- Icon Circle -->
+<div class="w-20 h-20 rounded-full bg-[#0a0a0a] border-2 border-gray-700 group-hover:border-[#00f3ff] flex items-center justify-center mb-6 relative z-10 group-hover:neon-shadow-cyan transition-all duration-300">
+<i class="fa-solid fa-file-video text-3xl text-gray-400 group-hover:text-[#00f3ff] transition-colors"></i>
+<div class="absolute -top-3 -right-3 w-8 h-8 bg-[#00f3ff] rounded-full flex items-center justify-center text-black font-bold text-sm font-['Space_Grotesk']">01</div>
+</div>
+<!-- Content Box -->
+<div class="bg-[#0a0a0a] border border-gray-800 p-4 rounded-xl text-center w-full group-hover:border-[#00f3ff] transition-colors h-40 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white mb-2 leading-tight">Portfolio Readiness</h3>
+<p class="text-xs text-gray-400 font-['Inter'] leading-relaxed">Final capstone project &amp; professional demo reel creation.</p>
+</div>
+<div class="w-full h-1 bg-gray-800 mt-2 rounded overflow-hidden">
+<div class="h-full bg-[#00f3ff] w-0 group-hover:w-full transition-all duration-700"></div>
+</div>
+</div>
+</div>
+<!-- Step 2: Profile Grooming -->
+<div class="flex flex-col items-center group process-card w-48 mt-16">
+<!-- Content Box (Top for zigzag effect attempt, but keeping aligned for clean look, just staggered slightly via margin if needed, here keeping aligned) -->
+<!-- Icon Circle -->
+<div class="w-20 h-20 rounded-full bg-[#0a0a0a] border-2 border-gray-700 group-hover:border-[#ff00ff] flex items-center justify-center mb-6 relative z-10 group-hover:neon-shadow-magenta transition-all duration-300">
+<i class="fa-brands fa-linkedin text-3xl text-gray-400 group-hover:text-[#ff00ff] transition-colors"></i>
+<div class="absolute -top-3 -right-3 w-8 h-8 bg-[#ff00ff] rounded-full flex items-center justify-center text-black font-bold text-sm font-['Space_Grotesk']">02</div>
+</div>
+<!-- Content Box -->
+<div class="bg-[#0a0a0a] border border-gray-800 p-4 rounded-xl text-center w-full group-hover:border-[#ff00ff] transition-colors h-40 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white mb-2 leading-tight">Profile Grooming</h3>
+<p class="text-xs text-gray-400 font-['Inter'] leading-relaxed">Resume building, LinkedIn optimization &amp; ArtStation setup.</p>
+</div>
+<div class="w-full h-1 bg-gray-800 mt-2 rounded overflow-hidden">
+<div class="h-full bg-[#ff00ff] w-0 group-hover:w-full transition-all duration-700 delay-100"></div>
+</div>
+</div>
+</div>
+<!-- Step 3: Interview Prep -->
+<div class="flex flex-col items-center group process-card w-48">
+<!-- Icon Circle -->
+<div class="w-20 h-20 rounded-full bg-[#0a0a0a] border-2 border-gray-700 group-hover:border-[#00f3ff] flex items-center justify-center mb-6 relative z-10 group-hover:neon-shadow-cyan transition-all duration-300">
+<i class="fa-solid fa-users-viewfinder text-3xl text-gray-400 group-hover:text-[#00f3ff] transition-colors"></i>
+<div class="absolute -top-3 -right-3 w-8 h-8 bg-[#00f3ff] rounded-full flex items-center justify-center text-black font-bold text-sm font-['Space_Grotesk']">03</div>
+</div>
+<!-- Content Box -->
+<div class="bg-[#0a0a0a] border border-gray-800 p-4 rounded-xl text-center w-full group-hover:border-[#00f3ff] transition-colors h-40 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white mb-2 leading-tight">Interview Prep</h3>
+<p class="text-xs text-gray-400 font-['Inter'] leading-relaxed">Mock interviews, soft skills training &amp; technical tests.</p>
+</div>
+<div class="w-full h-1 bg-gray-800 mt-2 rounded overflow-hidden">
+<div class="h-full bg-[#00f3ff] w-0 group-hover:w-full transition-all duration-700 delay-200"></div>
+</div>
+</div>
+</div>
+<!-- Step 4: Studio Drives -->
+<div class="flex flex-col items-center group process-card w-48 mt-16">
+<!-- Icon Circle -->
+<div class="w-20 h-20 rounded-full bg-[#0a0a0a] border-2 border-gray-700 group-hover:border-[#ff00ff] flex items-center justify-center mb-6 relative z-10 group-hover:neon-shadow-magenta transition-all duration-300">
+<i class="fa-solid fa-building-user text-3xl text-gray-400 group-hover:text-[#ff00ff] transition-colors"></i>
+<div class="absolute -top-3 -right-3 w-8 h-8 bg-[#ff00ff] rounded-full flex items-center justify-center text-black font-bold text-sm font-['Space_Grotesk']">04</div>
+</div>
+<!-- Content Box -->
+<div class="bg-[#0a0a0a] border border-gray-800 p-4 rounded-xl text-center w-full group-hover:border-[#ff00ff] transition-colors h-40 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white mb-2 leading-tight">Studio Drives</h3>
+<p class="text-xs text-gray-400 font-['Inter'] leading-relaxed">Direct connection with studios &amp; recruitment drive coordination.</p>
+</div>
+<div class="w-full h-1 bg-gray-800 mt-2 rounded overflow-hidden">
+<div class="h-full bg-[#ff00ff] w-0 group-hover:w-full transition-all duration-700 delay-300"></div>
+</div>
+</div>
+</div>
+<!-- Step 5: Alumni Support -->
+<div class="flex flex-col items-center group process-card w-48">
+<!-- Icon Circle -->
+<div class="w-20 h-20 rounded-full bg-[#0a0a0a] border-2 border-gray-700 group-hover:border-[#00f3ff] flex items-center justify-center mb-6 relative z-10 group-hover:neon-shadow-cyan transition-all duration-300">
+<i class="fa-solid fa-hand-holding-heart text-3xl text-gray-400 group-hover:text-[#00f3ff] transition-colors"></i>
+<div class="absolute -top-3 -right-3 w-8 h-8 bg-[#00f3ff] rounded-full flex items-center justify-center text-black font-bold text-sm font-['Space_Grotesk']">05</div>
+</div>
+<!-- Content Box -->
+<div class="bg-[#0a0a0a] border border-gray-800 p-4 rounded-xl text-center w-full group-hover:border-[#00f3ff] transition-colors h-40 flex flex-col justify-between">
+<div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white mb-2 leading-tight">Ongoing Support</h3>
+<p class="text-xs text-gray-400 font-['Inter'] leading-relaxed">Alumni network access &amp; lifetime career referral support.</p>
+</div>
+<div class="w-full h-1 bg-gray-800 mt-2 rounded overflow-hidden">
+<div class="h-full bg-[#00f3ff] w-0 group-hover:w-full transition-all duration-700 delay-400"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Strip -->
+<div class="absolute bottom-0 w-full h-1 bg-gray-900">
+<div class="w-full h-full bg-gradient-to-r from-[#00f3ff] via-[#ff00ff] to-[#00f3ff] opacity-30"></div>
+</div>
+</div>
+</body>
+</html>

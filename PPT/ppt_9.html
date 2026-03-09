@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Student Work &amp; Projects - Visual Gallery</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+            z-index: 10;
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+            border-color: #00f3ff;
+        }
+        .overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .overlay {
+            opacity: 1;
+            background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.2) 100%);
+        }
+        .item-tag {
+            backdrop-filter: blur(4px);
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .grid-pattern {
+            background-image: 
+                linear-gradient(rgba(40, 40, 40, 0.5) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(40, 40, 40, 0.5) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-black m-0 p-0 flex items-center justify-center">
+<div class="w-[1280px] h-[720px] bg-[#050505] relative overflow-hidden flex flex-col font-sans text-white">
+<!-- Background Elements -->
+<div class="absolute inset-0 grid-pattern opacity-10 pointer-events-none"></div>
+<div class="absolute top-[-200px] right-[-100px] w-[600px] h-[600px] bg-[#00f3ff] rounded-full filter blur-[200px] opacity-[0.03]"></div>
+<div class="absolute bottom-[-100px] left-[-100px] w-[600px] h-[600px] bg-[#ff00ff] rounded-full filter blur-[200px] opacity-[0.03]"></div>
+<!-- Header Section -->
+<div class="px-16 pt-10 pb-4 z-10 w-full">
+<div class="flex items-center space-x-3 mb-2">
+<div class="w-8 h-1 bg-[#ff00ff] shadow-[0_0_10px_#ff00ff]"></div>
+<p class="text-gray-400 tracking-[0.2em] text-xs uppercase font-medium font-['Inter']">Portfolio Showcase</p>
+</div>
+<div class="flex justify-between items-end border-b border-gray-800 pb-4">
+<h1 class="text-5xl font-bold font-['Space_Grotesk'] text-white leading-tight">
+                    STUDENT <span class="text-[#00f3ff]">WORK</span>
+</h1>
+<div class="flex items-center space-x-6">
+<div class="flex -space-x-3">
+<div class="w-10 h-10 rounded-full border-2 border-[#050505] bg-gray-800 flex items-center justify-center text-xs">AM</div>
+<div class="w-10 h-10 rounded-full border-2 border-[#050505] bg-gray-700 flex items-center justify-center text-xs">RK</div>
+<div class="w-10 h-10 rounded-full border-2 border-[#050505] bg-gray-600 flex items-center justify-center text-xs">JS</div>
+<div class="w-10 h-10 rounded-full border-2 border-[#050505] bg-[#00f3ff] text-black flex items-center justify-center font-bold text-xs">+2k</div>
+</div>
+<p class="text-gray-400 font-['Inter'] text-sm">Alumni producing industry-standard results</p>
+</div>
+</div>
+</div>
+<!-- Masonry Grid Content -->
+<div class="flex-1 px-16 pb-12 pt-4 z-10">
+<div class="grid grid-cols-4 grid-rows-2 gap-4 h-full">
+<!-- Item 1: 3D Character (Tall) -->
+<div class="gallery-item row-span-2 col-span-1 bg-gray-900 rounded-xl border border-gray-800 relative group">
+<img alt="3D Character Model" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="https://page.gensparksite.com/slides_images/ab33fc38fdd44d3017298b542787195f.webp"/>
+<div class="absolute inset-0 overlay flex flex-col justify-end p-6">
+<div class="item-tag px-3 py-1 rounded-full border border-gray-600 self-start mb-3">
+<p class="text-[10px] text-[#00f3ff] uppercase font-bold tracking-wider font-['Space_Grotesk']">3D Modeling</p>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] text-white mb-1">Character Design</h3>
+<p class="text-xs text-gray-300 font-['Inter']">Sculpting, Retopology &amp; Texturing</p>
+</div>
+</div>
+<!-- Item 2: VFX (Wide) -->
+<div class="gallery-item col-span-2 row-span-1 bg-gray-900 rounded-xl border border-gray-800 relative group">
+<img alt="VFX Compositing" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="https://page.gensparksite.com/slides_images/4e2e92e1509cbe5f642aedf2c226bcf5.webp"/>
+<div class="absolute inset-0 overlay flex flex-col justify-end p-6">
+<div class="item-tag px-3 py-1 rounded-full border border-gray-600 self-start mb-3">
+<p class="text-[10px] text-[#ff00ff] uppercase font-bold tracking-wider font-['Space_Grotesk']">VFX &amp; Compositing</p>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] text-white mb-1">Live Action Integration</h3>
+<p class="text-xs text-gray-300 font-['Inter']">Matchmoving, Roto &amp; CGI Integration</p>
+</div>
+</div>
+<!-- Item 3: Game Art (Standard) -->
+<div class="gallery-item col-span-1 row-span-1 bg-gray-900 rounded-xl border border-gray-800 relative group">
+<img alt="Game Environment" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="https://page.gensparksite.com/slides_images/afcaf85b4133955f83acb0d42971e8e1.webp"/>
+<div class="absolute inset-0 overlay flex flex-col justify-end p-5">
+<div class="item-tag px-3 py-1 rounded-full border border-gray-600 self-start mb-2">
+<p class="text-[10px] text-[#00f3ff] uppercase font-bold tracking-wider font-['Space_Grotesk']">Game Art</p>
+</div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white">Level Design</h3>
+</div>
+</div>
+<!-- Item 4: Motion Graphics (Standard) -->
+<div class="gallery-item col-span-1 row-span-1 bg-gray-900 rounded-xl border border-gray-800 relative group">
+<img alt="Motion Graphics" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="https://page.gensparksite.com/slides_images/3079cab925005b7100d11b56979a29e7.webp"/>
+<div class="absolute inset-0 overlay flex flex-col justify-end p-5">
+<div class="item-tag px-3 py-1 rounded-full border border-gray-600 self-start mb-2">
+<p class="text-[10px] text-[#ff00ff] uppercase font-bold tracking-wider font-['Space_Grotesk']">Motion</p>
+</div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white">Broadcast Design</h3>
+</div>
+</div>
+<!-- Item 5: Graphic Design (Standard) -->
+<div class="gallery-item col-span-1 row-span-1 bg-gray-900 rounded-xl border border-gray-800 relative group">
+<img alt="Graphic Design" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="https://page.gensparksite.com/slides_images/c34e8cb8ee004a75b549599ab6bc4784.webp"/>
+<div class="absolute inset-0 overlay flex flex-col justify-end p-5">
+<div class="item-tag px-3 py-1 rounded-full border border-gray-600 self-start mb-2">
+<p class="text-[10px] text-white uppercase font-bold tracking-wider font-['Space_Grotesk']">Design</p>
+</div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white">Brand Identity</h3>
+</div>
+</div>
+<!-- Item 6: Environment/Props (Standard) -->
+<div class="gallery-item col-span-1 row-span-1 bg-gray-900 rounded-xl border border-gray-800 relative group">
+<img alt="Environment Art" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="https://www.genspark.ai/image_placeholder.png"/>
+<div class="absolute inset-0 overlay flex flex-col justify-end p-5">
+<div class="item-tag px-3 py-1 rounded-full border border-gray-600 self-start mb-2">
+<p class="text-[10px] text-[#00f3ff] uppercase font-bold tracking-wider font-['Space_Grotesk']">Assets</p>
+</div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white">Props &amp; Env</h3>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Strip -->
+<div class="absolute bottom-0 w-full h-1 bg-gray-900">
+<div class="flex h-full w-full">
+<div class="w-1/4 bg-[#00f3ff] opacity-40"></div>
+<div class="w-1/4 bg-[#ff00ff] opacity-40"></div>
+<div class="w-1/4 bg-[#00f3ff] opacity-40"></div>
+<div class="w-1/4 bg-[#ff00ff] opacity-40"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

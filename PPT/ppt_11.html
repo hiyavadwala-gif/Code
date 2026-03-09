@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Comparison With Other Institutes - Comparison Table</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        /* No gradients used - purely solid colors and box-shadows */
+        .neon-border-cyan {
+            border: 1px solid #00f3ff;
+            box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+        }
+        
+        .frameboxx-card {
+            background-color: rgba(0, 243, 255, 0.03);
+            border-left: 4px solid #00f3ff;
+            transition: all 0.3s ease;
+        }
+        
+        .other-card {
+            background-color: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid #444;
+            transition: all 0.3s ease;
+        }
+
+        .comparison-row:hover .frameboxx-card {
+            background-color: rgba(0, 243, 255, 0.08);
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+            transform: translateX(5px);
+        }
+
+        .comparison-row:hover .other-card {
+            opacity: 0.7;
+        }
+
+        .icon-box {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Checkmark glow */
+        .check-glow {
+            text-shadow: 0 0 8px rgba(0, 243, 255, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-black m-0 p-0 flex items-center justify-center">
+<div class="w-[1280px] h-[720px] bg-[#050505] relative overflow-hidden flex flex-col font-sans text-white">
+<!-- Ambient Background Elements (No Gradients) -->
+<div class="absolute top-[-100px] left-[20%] w-[500px] h-[500px] bg-[#00f3ff] rounded-full filter blur-[250px] opacity-[0.05]"></div>
+<div class="absolute bottom-[-100px] right-[20%] w-[500px] h-[500px] bg-[#ff00ff] rounded-full filter blur-[250px] opacity-[0.05]"></div>
+<!-- Header Section -->
+<div class="px-16 pt-10 pb-2 z-10 w-full">
+<div class="flex items-center space-x-3 mb-2">
+<div class="w-8 h-1 bg-[#ff00ff] shadow-[0_0_10px_#ff00ff]"></div>
+<p class="text-gray-400 tracking-[0.2em] text-xs uppercase font-medium font-['Inter']">Why Choose Us</p>
+</div>
+<div class="flex justify-between items-end border-b border-gray-800 pb-4">
+<h1 class="text-5xl font-bold font-['Space_Grotesk'] text-white leading-tight">
+                    FRAMEBOXX <span class="text-[#00f3ff]">ADVANTAGE</span>
+</h1>
+<p class="text-gray-400 font-['Inter'] text-sm text-right max-w-md">
+                    See how we stack up against typical training institutes.
+                </p>
+</div>
+</div>
+<!-- Comparison Table Header -->
+<div class="px-16 mt-6 z-10">
+<div class="grid grid-cols-12 gap-4 pb-4 border-b border-gray-800 text-sm font-['Space_Grotesk'] uppercase tracking-wider text-gray-500">
+<div class="col-span-3 pl-2">Criterion</div>
+<div class="col-span-5 text-[#00f3ff] font-bold flex items-center gap-2">
+<i class="fa-solid fa-cube"></i> Frameboxx Institute
+                </div>
+<div class="col-span-4 text-gray-400">Other Institutes</div>
+</div>
+</div>
+<!-- Main Comparison Content -->
+<div class="flex-1 px-16 py-2 overflow-hidden z-10 flex flex-col justify-center gap-3">
+<!-- Row 1: Practical Learning -->
+<div class="grid grid-cols-12 gap-4 items-stretch comparison-row group">
+<!-- Criteria -->
+<div class="col-span-3 flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-gray-900 border border-gray-700 flex items-center justify-center icon-box text-[#ff00ff]">
+<i class="fa-solid fa-hands-holding-circle text-xl"></i>
+</div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white">Learning Style</h3>
+</div>
+<!-- Frameboxx -->
+<div class="col-span-5 frameboxx-card rounded-r-lg p-4 flex items-center gap-3">
+<i class="fa-solid fa-circle-check text-[#00f3ff] text-xl check-glow"></i>
+<div>
+<p class="font-bold text-white text-sm font-['Inter']">Practical &amp; Production-Based</p>
+<p class="text-xs text-gray-400 font-['Inter'] mt-1">Real-world briefs, shot-based reviews, and studio pipelines.</p>
+</div>
+</div>
+<!-- Others -->
+<div class="col-span-4 other-card rounded-r-lg p-4 flex items-center gap-3 opacity-60">
+<i class="fa-solid fa-circle-minus text-gray-500 text-xl"></i>
+<div>
+<p class="font-bold text-gray-300 text-sm font-['Inter']">Theoretical Focus</p>
+<p class="text-xs text-gray-500 font-['Inter'] mt-1">Textbook-heavy with limited real-world exposure.</p>
+</div>
+</div>
+</div>
+<!-- Row 2: Placement -->
+<div class="grid grid-cols-12 gap-4 items-stretch comparison-row group">
+<!-- Criteria -->
+<div class="col-span-3 flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-gray-900 border border-gray-700 flex items-center justify-center icon-box text-[#00f3ff]">
+<i class="fa-solid fa-briefcase text-xl"></i>
+</div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white">Placement</h3>
+</div>
+<!-- Frameboxx -->
+<div class="col-span-5 frameboxx-card rounded-r-lg p-4 flex items-center gap-3">
+<i class="fa-solid fa-circle-check text-[#00f3ff] text-xl check-glow"></i>
+<div>
+<p class="font-bold text-white text-sm font-['Inter']">Structured Career Prep</p>
+<p class="text-xs text-gray-400 font-['Inter'] mt-1">Dedicated placement cell, mock interviews, and studio connects.</p>
+</div>
+</div>
+<!-- Others -->
+<div class="col-span-4 other-card rounded-r-lg p-4 flex items-center gap-3 opacity-60">
+<i class="fa-solid fa-circle-minus text-gray-500 text-xl"></i>
+<div>
+<p class="font-bold text-gray-300 text-sm font-['Inter']">Generic Guidance</p>
+<p class="text-xs text-gray-500 font-['Inter'] mt-1">Basic assistance or job portal access only.</p>
+</div>
+</div>
+</div>
+<!-- Row 3: Industry Exposure -->
+<div class="grid grid-cols-12 gap-4 items-stretch comparison-row group">
+<!-- Criteria -->
+<div class="col-span-3 flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-gray-900 border border-gray-700 flex items-center justify-center icon-box text-[#ff00ff]">
+<i class="fa-solid fa-network-wired text-xl"></i>
+</div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white">Exposure</h3>
+</div>
+<!-- Frameboxx -->
+<div class="col-span-5 frameboxx-card rounded-r-lg p-4 flex items-center gap-3">
+<i class="fa-solid fa-circle-check text-[#00f3ff] text-xl check-glow"></i>
+<div>
+<p class="font-bold text-white text-sm font-['Inter']">Immersive Industry Connect</p>
+<p class="text-xs text-gray-400 font-['Inter'] mt-1">Webinars, studio visits, competitions, and expert mentors.</p>
+</div>
+</div>
+<!-- Others -->
+<div class="col-span-4 other-card rounded-r-lg p-4 flex items-center gap-3 opacity-60">
+<i class="fa-solid fa-circle-minus text-gray-500 text-xl"></i>
+<div>
+<p class="font-bold text-gray-300 text-sm font-['Inter']">Limited Touchpoints</p>
+<p class="text-xs text-gray-500 font-['Inter'] mt-1">Rare guest lectures or purely academic environment.</p>
+</div>
+</div>
+</div>
+<!-- Row 4: Software Stack -->
+<div class="grid grid-cols-12 gap-4 items-stretch comparison-row group">
+<!-- Criteria -->
+<div class="col-span-3 flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-gray-900 border border-gray-700 flex items-center justify-center icon-box text-[#00f3ff]">
+<i class="fa-solid fa-laptop-code text-xl"></i>
+</div>
+<h3 class="text-lg font-bold font-['Space_Grotesk'] text-white">Software</h3>
+</div>
+<!-- Frameboxx -->
+<div class="col-span-5 frameboxx-card rounded-r-lg p-4 flex items-center gap-3">
+<i class="fa-solid fa-circle-check text-[#00f3ff] text-xl check-glow"></i>
+<div>
+<p class="font-bold text-white text-sm font-['Inter']">Latest Pipeline Tools</p>
+<p class="text-xs text-gray-400 font-['Inter'] mt-1">Maya, Blender, Unreal Engine 5, Nuke, Substance.</p>
+</div>
+</div>
+<!-- Others -->
+<div class="col-span-4 other-card rounded-r-lg p-4 flex items-center gap-3 opacity-60">
+<i class="fa-solid fa-circle-minus text-gray-500 text-xl"></i>
+<div>
+<p class="font-bold text-gray-300 text-sm font-['Inter']">Outdated Stacks</p>
+<p class="text-xs text-gray-500 font-['Inter'] mt-1">Older versions or limited cross-software workflow training.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Strip -->
+<div class="absolute bottom-0 w-full h-1 bg-gray-900">
+<div class="w-1/2 bg-[#00f3ff] h-full opacity-50 ml-0 mr-auto"></div>
+</div>
+</div>
+</body>
+</html>

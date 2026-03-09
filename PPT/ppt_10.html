@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Career Opportunities - Roles Icon List</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    /* Neon Glows using box-shadow instead of gradients to comply with export rules */
+    .glow-cyan {
+        box-shadow: 0 0 15px rgba(0, 243, 255, 0.15);
+        border-color: rgba(0, 243, 255, 0.4);
+    }
+    .glow-magenta {
+        box-shadow: 0 0 15px rgba(255, 0, 255, 0.15);
+        border-color: rgba(255, 0, 255, 0.4);
+    }
+    
+    .card-hover {
+        transition: all 0.3s ease;
+    }
+    .card-hover:hover {
+        transform: translateY(-8px);
+        background-color: #111;
+    }
+    .card-hover:hover .icon-box {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: scale(1.1);
+    }
+    
+    .role-pill {
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.2s;
+    }
+    .role-pill:hover {
+        background-color: rgba(0, 243, 255, 0.1);
+        border-color: rgba(0, 243, 255, 0.3);
+        color: #00f3ff;
+    }
+</style>
+</head>
+<body class="bg-black m-0 p-0 flex items-center justify-center">
+<div class="w-[1280px] h-[720px] bg-[#050505] relative overflow-hidden flex flex-col font-sans text-white">
+<!-- Decorative Ambient Orbs (Simulated with box-shadow blur to avoid gradients) -->
+<div class="absolute top-[-50px] right-[20%] w-4 h-4 rounded-full bg-transparent shadow-[0_0_400px_100px_rgba(0,243,255,0.08)]"></div>
+<div class="absolute bottom-[-50px] left-[20%] w-4 h-4 rounded-full bg-transparent shadow-[0_0_400px_100px_rgba(255,0,255,0.08)]"></div>
+<!-- Header -->
+<div class="px-16 pt-10 pb-4 z-10 w-full border-b border-gray-800">
+<div class="flex items-center space-x-3 mb-2">
+<div class="w-8 h-1 bg-[#00f3ff] shadow-[0_0_8px_#00f3ff]"></div>
+<p class="text-gray-400 tracking-[0.2em] text-xs uppercase font-medium font-['Inter']">Future Pathways</p>
+</div>
+<div class="flex justify-between items-end">
+<h1 class="text-5xl font-bold font-['Space_Grotesk'] text-white leading-tight">
+                    CAREER <span class="text-[#00f3ff]">OPPORTUNITIES</span>
+</h1>
+<div class="flex items-center space-x-4 pb-2">
+<p class="text-gray-400 text-sm font-['Inter']">Where will your skills take you?</p>
+</div>
+</div>
+</div>
+<!-- Main Content: Role Cards -->
+<div class="flex-1 px-16 py-8 z-10 flex flex-col justify-center">
+<!-- Primary Roles Grid -->
+<div class="grid grid-cols-5 gap-5 mb-8">
+<!-- Card 1: Animator -->
+<div class="bg-[#0a0a0a] border border-gray-800 rounded-xl p-6 flex flex-col items-center text-center card-hover hover:glow-cyan group h-80">
+<div class="icon-box w-16 h-16 rounded-full bg-gray-900 flex items-center justify-center mb-6 transition-all duration-300 border border-gray-700 group-hover:border-[#00f3ff]">
+<i class="fa-solid fa-person-running text-2xl text-[#00f3ff]"></i>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] text-white mb-3">Animator</h3>
+<div class="w-8 h-0.5 bg-gray-700 mb-4 group-hover:bg-[#00f3ff]"></div>
+<ul class="text-gray-400 text-xs font-['Inter'] space-y-2">
+<li>Character Animation</li>
+<li>3D Animation</li>
+<li>2D Animation</li>
+</ul>
+</div>
+<!-- Card 2: VFX Artist -->
+<div class="bg-[#0a0a0a] border border-gray-800 rounded-xl p-6 flex flex-col items-center text-center card-hover hover:glow-magenta group h-80">
+<div class="icon-box w-16 h-16 rounded-full bg-gray-900 flex items-center justify-center mb-6 transition-all duration-300 border border-gray-700 group-hover:border-[#ff00ff]">
+<i class="fa-solid fa-wand-magic-sparkles text-2xl text-[#ff00ff]"></i>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] text-white mb-3">VFX Artist</h3>
+<div class="w-8 h-0.5 bg-gray-700 mb-4 group-hover:bg-[#ff00ff]"></div>
+<ul class="text-gray-400 text-xs font-['Inter'] space-y-2">
+<li>Compositor</li>
+<li>FX &amp; Dynamics</li>
+<li>Roto / Paint</li>
+</ul>
+</div>
+<!-- Card 3: Graphic Designer -->
+<div class="bg-[#0a0a0a] border border-gray-800 rounded-xl p-6 flex flex-col items-center text-center card-hover hover:glow-cyan group h-80">
+<div class="icon-box w-16 h-16 rounded-full bg-gray-900 flex items-center justify-center mb-6 transition-all duration-300 border border-gray-700 group-hover:border-[#00f3ff]">
+<i class="fa-solid fa-pen-nib text-2xl text-[#00f3ff]"></i>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] text-white mb-3">Designer</h3>
+<div class="w-8 h-0.5 bg-gray-700 mb-4 group-hover:bg-[#00f3ff]"></div>
+<ul class="text-gray-400 text-xs font-['Inter'] space-y-2">
+<li>Graphic Design</li>
+<li>Visual Design</li>
+<li>Branding Identity</li>
+</ul>
+</div>
+<!-- Card 4: Game Artist -->
+<div class="bg-[#0a0a0a] border border-gray-800 rounded-xl p-6 flex flex-col items-center text-center card-hover hover:glow-magenta group h-80">
+<div class="icon-box w-16 h-16 rounded-full bg-gray-900 flex items-center justify-center mb-6 transition-all duration-300 border border-gray-700 group-hover:border-[#ff00ff]">
+<i class="fa-solid fa-gamepad text-2xl text-[#ff00ff]"></i>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] text-white mb-3">Game Artist</h3>
+<div class="w-8 h-0.5 bg-gray-700 mb-4 group-hover:bg-[#ff00ff]"></div>
+<ul class="text-gray-400 text-xs font-['Inter'] space-y-2">
+<li>3D Assets</li>
+<li>Environment Art</li>
+<li>Lighting Artist</li>
+</ul>
+</div>
+<!-- Card 5: Motion Designer -->
+<div class="bg-[#0a0a0a] border border-gray-800 rounded-xl p-6 flex flex-col items-center text-center card-hover hover:glow-cyan group h-80">
+<div class="icon-box w-16 h-16 rounded-full bg-gray-900 flex items-center justify-center mb-6 transition-all duration-300 border border-gray-700 group-hover:border-[#00f3ff]">
+<i class="fa-solid fa-film text-2xl text-[#00f3ff]"></i>
+</div>
+<h3 class="text-xl font-bold font-['Space_Grotesk'] text-white mb-3">Video/Motion</h3>
+<div class="w-8 h-0.5 bg-gray-700 mb-4 group-hover:bg-[#00f3ff]"></div>
+<ul class="text-gray-400 text-xs font-['Inter'] space-y-2">
+<li>Video Editor</li>
+<li>Motion Designer</li>
+<li>Post-Production</li>
+</ul>
+</div>
+</div>
+<!-- Additional Roles Section -->
+<div class="w-full bg-[#0a0a0a] border border-gray-800 rounded-xl p-6 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-[#ff00ff]"></div>
+<div class="flex items-center gap-6">
+<div class="w-48 flex-shrink-0">
+<h4 class="text-lg font-bold font-['Space_Grotesk'] text-white">Specialized Roles</h4>
+<p class="text-[10px] text-gray-500 font-['Inter'] mt-1">Niche skills in high demand</p>
+</div>
+<div class="flex-1 flex flex-wrap gap-3">
+<span class="role-pill px-4 py-2 rounded-full text-xs text-gray-300 font-['Space_Grotesk']">3D Modeler</span>
+<span class="role-pill px-4 py-2 rounded-full text-xs text-gray-300 font-['Space_Grotesk']">Texture Artist</span>
+<span class="role-pill px-4 py-2 rounded-full text-xs text-gray-300 font-['Space_Grotesk']">Layout Artist</span>
+<span class="role-pill px-4 py-2 rounded-full text-xs text-gray-300 font-['Space_Grotesk']">Matchmove Artist</span>
+<span class="role-pill px-4 py-2 rounded-full text-xs text-gray-300 font-['Space_Grotesk']">UI Designer</span>
+<span class="role-pill px-4 py-2 rounded-full text-xs text-gray-300 font-['Space_Grotesk']">Concept Artist</span>
+<span class="role-pill px-4 py-2 rounded-full text-xs text-gray-300 font-['Space_Grotesk']">Technical Artist</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="absolute bottom-0 w-full h-1 bg-gray-900">
+<div class="w-1/2 h-full bg-[#00f3ff] opacity-40"></div>
+</div>
+</div>
+</body>
+</html>

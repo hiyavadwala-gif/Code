@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thank You - Minimal</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    /* Neon Text Glow */
+    .glow-cyan {
+        text-shadow: 0 0 20px rgba(0, 243, 255, 0.6);
+    }
+    
+    /* Interactive Cards */
+    .contact-card {
+        background-color: #0a0a0a;
+        border: 1px solid #222;
+        transition: all 0.3s ease;
+    }
+    .contact-card:hover {
+        background-color: #111;
+        border-color: #00f3ff;
+        transform: translateX(10px);
+        box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
+    }
+    
+    .icon-box {
+        background-color: #151515;
+        border: 1px solid #333;
+        transition: all 0.3s;
+    }
+    .contact-card:hover .icon-box {
+        background-color: #00f3ff;
+        color: #000;
+        border-color: #00f3ff;
+    }
+
+    /* Social Buttons */
+    .social-btn {
+        transition: all 0.3s;
+        border: 1px solid #333;
+        color: #666;
+    }
+    .social-btn:hover {
+        border-color: #ff00ff;
+        color: #ff00ff;
+        box-shadow: 0 0 15px rgba(255, 0, 255, 0.25);
+        transform: translateY(-3px);
+    }
+    
+    /* Ambient Glows (Using Box Shadow) */
+    .ambient-cyan {
+        box-shadow: 0 0 150px 80px rgba(0, 243, 255, 0.05);
+    }
+    .ambient-magenta {
+        box-shadow: 0 0 150px 80px rgba(255, 0, 255, 0.05);
+    }
+</style>
+</head>
+<body class="bg-black m-0 p-0 flex items-center justify-center">
+<div class="w-[1280px] h-[720px] bg-[#050505] relative overflow-hidden flex font-sans text-white">
+<!-- Ambient Background Effects -->
+<div class="absolute top-0 left-0 w-10 h-10 bg-transparent ambient-cyan rounded-full pointer-events-none"></div>
+<div class="absolute bottom-0 right-0 w-10 h-10 bg-transparent ambient-magenta rounded-full pointer-events-none"></div>
+<!-- Left Section: Main Heading -->
+<div class="w-7/12 h-full flex flex-col justify-center pl-20 pr-10 relative z-10">
+<div class="w-16 h-1 bg-[#ff00ff] mb-8 shadow-md"></div>
+<h1 class="text-[120px] font-bold font-['Space_Grotesk'] leading-[0.9] mb-6 tracking-tighter">
+            THANK<br/>
+<span class="text-[#00f3ff] glow-cyan">YOU</span>
+</h1>
+<div class="flex flex-col gap-4 mt-8">
+<p class="text-gray-400 text-xl font-['Inter'] max-w-lg leading-relaxed">
+                Ready to frame your future? Join the creative revolution at Frameboxx.
+            </p>
+<!-- Q&A Badge -->
+<div class="flex items-center gap-4 mt-4">
+<div class="flex items-center justify-center px-6 py-2 border border-[#ff00ff] rounded text-[#ff00ff] font-bold font-['Space_Grotesk'] text-sm tracking-widest uppercase">
+                    Q &amp; A Session
+                </div>
+<div class="h-px w-20 bg-gray-800"></div>
+</div>
+</div>
+</div>
+<!-- Right Section: Contact Details -->
+<div class="w-5/12 h-full bg-[#080808] border-l border-gray-900 flex flex-col justify-center px-12 py-10 relative z-10">
+<div class="flex flex-col gap-5">
+<h3 class="text-2xl font-bold font-['Space_Grotesk'] mb-2">Contact Us</h3>
+<!-- Branch Info -->
+<div class="contact-card p-4 rounded-xl flex items-center gap-4 cursor-default">
+<div class="icon-box w-12 h-12 rounded-lg flex items-center justify-center text-[#00f3ff] shrink-0">
+<i class="fa-solid fa-map-location-dot text-lg"></i>
+</div>
+<div>
+<p class="text-[10px] text-gray-500 uppercase tracking-widest font-bold font-['Space_Grotesk']">Visit Branch</p>
+<p class="text-white font-['Inter'] text-sm mt-1 font-medium">{Insert Branch Name &amp; Address}</p>
+</div>
+</div>
+<!-- Phone/Email -->
+<div class="contact-card p-4 rounded-xl flex items-center gap-4 cursor-default">
+<div class="icon-box w-12 h-12 rounded-lg flex items-center justify-center text-[#ff00ff] shrink-0">
+<i class="fa-solid fa-headset text-lg"></i>
+</div>
+<div>
+<p class="text-[10px] text-gray-500 uppercase tracking-widest font-bold font-['Space_Grotesk']">Get in Touch</p>
+<p class="text-white font-['Inter'] text-sm mt-1 font-medium">{+91 98765 43210} <br/> {info@frameboxx.in}</p>
+</div>
+</div>
+<!-- Website -->
+<div class="contact-card p-4 rounded-xl flex items-center gap-4 cursor-default">
+<div class="icon-box w-12 h-12 rounded-lg flex items-center justify-center text-[#00f3ff] shrink-0">
+<i class="fa-solid fa-arrow-pointer text-lg"></i>
+</div>
+<div>
+<p class="text-[10px] text-gray-500 uppercase tracking-widest font-bold font-['Space_Grotesk']">Apply Online</p>
+<p class="text-white font-['Inter'] text-sm mt-1 font-medium">www.frameboxx.in</p>
+</div>
+</div>
+</div>
+<!-- Bottom Row: Socials & QR -->
+<div class="mt-10 pt-8 border-t border-gray-800 flex justify-between items-center">
+<div class="flex gap-3">
+<div class="social-btn w-9 h-9 rounded flex items-center justify-center cursor-pointer">
+<i class="fa-brands fa-facebook-f text-sm"></i>
+</div>
+<div class="social-btn w-9 h-9 rounded flex items-center justify-center cursor-pointer">
+<i class="fa-brands fa-instagram text-sm"></i>
+</div>
+<div class="social-btn w-9 h-9 rounded flex items-center justify-center cursor-pointer">
+<i class="fa-brands fa-youtube text-sm"></i>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="text-right hidden sm:block">
+<p class="text-white text-xs font-bold font-['Space_Grotesk']">Student Work</p>
+<p class="text-[#00f3ff] text-[10px] font-['Inter']">Scan QR Code</p>
+</div>
+<div class="w-12 h-12 bg-white rounded p-1 flex items-center justify-center overflow-hidden">
+<i class="fa-solid fa-qrcode text-black text-3xl"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
